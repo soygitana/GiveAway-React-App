@@ -1,0 +1,26 @@
+.home-columns {
+    background-color: white;
+    background-image: url('/assets/columns.jpg');
+    min-height: 350px;
+
+    .box-flex {
+        max-width: 30%;
+    }
+
+    .number {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .title {
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 20px;
+        letter-spacing: 1px;
+    }
+
+    .text {
+        text-align: center;
+    }
+}

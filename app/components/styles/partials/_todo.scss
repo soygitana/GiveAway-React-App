@@ -1,0 +1,29 @@
+.to-do {
+    background-color: rgb(216, 216, 216);
+    min-height: 300px;
+
+    .container-flex {
+        flex-wrap: wrap;
+    }
+
+    .box-flex {
+        display: flex;
+        min-width: 200px;
+        padding: 20px;
+    }
+
+    img {
+        margin-top: 40px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+}

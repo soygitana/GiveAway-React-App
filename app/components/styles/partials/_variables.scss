@@ -1,0 +1,22 @@
+$colorLight: #F0F1F1;
+$colorBrown: #5E5322;
+$colorGrey: #737373;
+$colorDark:#3C3C3C;
+$colorDeco:#FAD648;
+
+$fontPrimary:'Open Sans',
+sans-serif;
+
+$fontSecondary:'Merriweather',
+serif;
+
+
+@mixin link {
+    text-decoration: none;
+    color: $colorDark;
+    padding: 10px;
+}
+
+@mixin border {
+    border: 1px solid $colorGrey;
+}

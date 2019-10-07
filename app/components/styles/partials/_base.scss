@@ -1,0 +1,46 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    font-family: $fontPrimary;
+    color: $colorDark;
+}
+
+
+.app-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-flex {
+    flex: 1;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.deco {
+    padding: 15px;
+}
