@@ -9,15 +9,24 @@ import {
     NavLink,
 } from 'react-router-dom';
 
-import Home from './home.jsx';
-import NotFound from './notfound.jsx'
+
+import LoginNav from './LoginNav.jsx';
+import Navigation from './Navigation.jsx';
+import Home from './Home.jsx';
+import SignIn from './SignIn.jsx'
+import Login from './Login.jsx'
+import NotFound from './NotFound.jsx'
 
 class App extends Component {
     render() {
         return (
             <HashRouter>
+                <LoginNav />
+                <Navigation />
                 <Switch>
                     <Route exact path='/' component={Home} />
+                    <Route exact path='/signin' component={SignIn} />
+                    <Route exact path='/login' component={Login} />
                     <Route component={NotFound} />
                 </Switch>
             </HashRouter>

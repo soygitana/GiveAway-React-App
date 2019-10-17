@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../styles/main.scss";
 
-import Textbox from './textbox.jsx';
+import Textbox from './TextBox.jsx';
 
 class Button extends Component {
     render() {
@@ -9,7 +9,9 @@ class Button extends Component {
             <div className="app-container col-12">
                 <div className="container-flex">
                     <div className="box-flex">
-                        <Textbox text="oddaj rzeczy" />
+                        <div className="text-boxes">
+                            <Textbox text="oddaj rzeczy" />
+                        </div>
                     </div>
                 </div>
             </div>

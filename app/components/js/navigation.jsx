@@ -4,6 +4,7 @@ import "../styles/main.scss";
 class Navigation extends Component {
     render() {
         return (
+            <div className="app-container col-12">
             <nav class="page-nav">
                 <ul class="page-nav-list">
                     <li><a href="#">start</a></li>
@@ -13,6 +14,7 @@ class Navigation extends Component {
                     <li><a href="#">kontakt</a></li>
                 </ul>
             </nav>
+            </div>
         )
     }
 }

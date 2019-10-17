@@ -1,0 +1,44 @@
+.help {
+
+    .container-flex {
+        justify-content: space-around;
+    }
+.box-flex {
+    max-width: 50%;
+}
+
+.text {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    margin-left: 80px;
+    margin-right: 80px;
+    line-height: 2;
+    text-align: center;
+}
+
+.organization {
+    margin: 20px 150px 0 150px;
+    font-family: $fontSecondary; 
+    color: $colorGrey;
+    border-bottom: 2px solid rgb(194, 194, 194);
+
+    .title {
+        font-size: 20px;
+        margin: 0;
+        text-align: left;
+     
+    }
+    .text {
+font-size: 15px;
+margin: 0;
+text-align: left;
+margin-bottom: 15px;
+
+    }
+    .textSecondary {
+        text-align: right;
+    }
+}
+
+}

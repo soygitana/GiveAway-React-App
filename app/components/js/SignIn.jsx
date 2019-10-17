@@ -4,7 +4,7 @@ import "../styles/main.scss";
 
 import Deco from './deco.jsx';
 
-class Login extends Component {
+class SignIn extends Component {
     constructor(props) {
         super(props);
         this.state = { value: '' };
@@ -29,7 +29,7 @@ class Login extends Component {
 
                     <div className="container-flex">
                         <div className="box-flex">
-                            <h2 className="title">Zaloguj się</h2>
+                            <h2 className="title">Załóż konto</h2>
                             <Deco />
                         </div>
                         <div className="box-flex">
@@ -43,7 +43,11 @@ class Login extends Component {
                                         <p>Hasło</p>
                                         <input type="text" value={this.state.value} onChange={this.handleChange} />
                                     </label>
-                                    <input className="sumbitBtn" type="submit" value="Zaloguj się" />
+                                    <label>
+                                        <p>Powtórz hasło</p>
+                                        <input type="text" value={this.state.value} onChange={this.handleChange} />
+                                    </label>
+                                    <input className="sumbitBtn" type="submit" value="Załóż konto" />
                                 </div>
                             </form>
                         </div>
@@ -55,4 +59,4 @@ class Login extends Component {
 }
 
 
-export default Login;
+export default SignIn;
