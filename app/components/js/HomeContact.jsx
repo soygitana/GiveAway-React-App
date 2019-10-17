@@ -68,7 +68,7 @@ class Contact extends Component {
     render() {
         return (
             <>
-                <div className="contact">
+                <div id="contact" className="contact">
                     <div className="app-container col-12">
                         <div className="container-flex">
                             <div className="box-flex"></div>

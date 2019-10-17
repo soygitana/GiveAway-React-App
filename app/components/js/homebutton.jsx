@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import "../styles/main.scss";
-
-import Textbox from './TextBox.jsx';
+import {
+    HashRouter,
+    Route,
+    Link,
+    Switch,
+    NavLink,
+} from 'react-router-dom';
 
 class Button extends Component {
     render() {
@@ -10,7 +15,7 @@ class Button extends Component {
                 <div className="container-flex">
                     <div className="box-flex">
                         <div className="text-boxes">
-                            <Textbox text="oddaj rzeczy" />
+                            <Link className="text-box" to="/login">Oddaj rzeczy</Link>
                         </div>
                     </div>
                 </div>

@@ -9,7 +9,7 @@ class About extends Component {
     render() {
         return (
             <>
-                <div className="about">
+                <div id='about' className="about">
                     <div className="col-12">
                         <div className="container-flex">
                             <div className="box-flex">

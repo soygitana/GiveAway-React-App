@@ -32,7 +32,7 @@ class Help extends Component {
     render() {
         return (
             <>
-                <div className="help">
+                <div id="organization" className="help">
                     <div className="app-container col-12">
                         <div className="container-flex">
                             <div className="box-flex">
