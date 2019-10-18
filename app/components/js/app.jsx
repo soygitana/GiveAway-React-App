@@ -13,8 +13,8 @@ import {
 import LoginNav from './LoginNav.jsx';
 import Navigation from './Navigation.jsx';
 import Home from './Home.jsx';
-import SignIn from './SignIn.jsx'
-import Login from './Login.jsx'
+import SignUp from './SignUp.jsx'
+import LogIn from './LogIn.jsx'
 import NotFound from './NotFound.jsx'
 
 class App extends Component {
@@ -25,8 +25,8 @@ class App extends Component {
                 <Navigation />
                 <Switch>
                     <Route exact path='/' component={Home} />
-                    <Route exact path='/signin' component={SignIn} />
-                    <Route exact path='/login' component={Login} />
+                    <Route path='/signup' component={SignUp} />
+                    <Route path='/login' component={LogIn} />
                     <Route component={NotFound} />
                 </Switch>
             </HashRouter>

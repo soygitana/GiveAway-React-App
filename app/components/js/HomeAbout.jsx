@@ -5,7 +5,7 @@ import Deco from './deco.jsx';
 
 
 
-class About extends Component {
+class HomeAbout extends Component {
     render() {
         return (
             <>
@@ -29,4 +29,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default HomeAbout;

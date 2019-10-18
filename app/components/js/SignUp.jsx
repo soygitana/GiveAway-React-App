@@ -4,7 +4,7 @@ import "../styles/main.scss";
 
 import Deco from './deco.jsx';
 
-class SignIn extends Component {
+class SignUp extends Component {
     constructor(props) {
         super(props);
         this.state = { value: '' };
@@ -59,4 +59,4 @@ class SignIn extends Component {
 }
 
 
-export default SignIn;
+export default SignUp;

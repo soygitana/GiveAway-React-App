@@ -28,7 +28,7 @@ class Organization extends Component {
 }
 
 
-class Help extends Component {
+class HomeOrganizations extends Component {
     render() {
         return (
             <>
@@ -56,4 +56,4 @@ class Help extends Component {
     }
 }
 
-export default Help;
+export default HomeOrganizations;

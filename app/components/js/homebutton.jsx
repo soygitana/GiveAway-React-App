@@ -8,7 +8,7 @@ import {
     NavLink,
 } from 'react-router-dom';
 
-class Button extends Component {
+class HomeButton extends Component {
     render() {
         return (
             <div className="app-container col-12">
@@ -24,4 +24,4 @@ class Button extends Component {
     }
 }
 
-export default Button;
+export default HomeButton;

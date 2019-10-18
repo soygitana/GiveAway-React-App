@@ -3,7 +3,7 @@ import "../styles/main.scss";
 
 import Deco from './deco.jsx';
 
-class Steps extends Component {
+class HomeSteps extends Component {
     render() {
         return (
             <div id="steps">
@@ -20,4 +20,4 @@ class Steps extends Component {
     }
 }
 
-export default Steps;
+export default HomeSteps;

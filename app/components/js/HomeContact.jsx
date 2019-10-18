@@ -64,7 +64,7 @@ class Footer extends Component {
 }
 
 
-class Contact extends Component {
+class HomeContact extends Component {
     render() {
         return (
             <>
@@ -86,4 +86,4 @@ class Contact extends Component {
     }
 }
 
-export default Contact;
+export default HomeContact;

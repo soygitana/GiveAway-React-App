@@ -19,7 +19,7 @@ class Box extends Component {
 }
 
 
-class ToDo extends Component {
+class HomeToDo extends Component {
     render() {
         return (
             <div className="to-do">
@@ -36,4 +36,4 @@ class ToDo extends Component {
     }
 }
 
-export default ToDo;
+export default HomeToDo;
