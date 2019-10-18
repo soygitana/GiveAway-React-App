@@ -1,7 +1,7 @@
 const path = require("path");
 
 const entryPath = ".";
-const entryFile = "js/app.jsx";
+const entryFile = "components/js/app.jsx";
 
 module.exports = {
     entry: ["whatwg-fetch", path.resolve(`${entryPath}/${entryFile}`)],

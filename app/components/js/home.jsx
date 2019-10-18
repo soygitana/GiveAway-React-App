@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../styles/main.scss";
+import "../../styles/main.scss";
 
 import Hero from './HomeHeader.jsx';
 import HomeColumns from './HomeThreeColumns.jsx';

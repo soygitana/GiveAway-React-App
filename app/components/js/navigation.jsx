@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../styles/main.scss";
+import "../../styles/main.scss";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 class Navigation extends Component {
