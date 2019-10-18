@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "../../styles/main.scss";
+import "../styles/main.scss";
 
 
-import Deco from './deco.jsx';
+import Deco from './Deco.jsx';
 import Textbox from './TextBox.jsx';
 
 

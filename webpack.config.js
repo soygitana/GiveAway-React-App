@@ -1,7 +1,7 @@
 const path = require("path");
 
 const entryPath = ".";
-const entryFile = "components/js/app.jsx";
+const entryFile = "components/App.jsx";
 
 module.exports = {
     entry: ["whatwg-fetch", path.resolve(`${entryPath}/${entryFile}`)],
@@ -11,7 +11,7 @@ module.exports = {
     },
     devServer: {
         contentBase: path.join(__dirname, entryPath),
-        publicPath: "/js/",
+        publicPath: "/components/",
         compress: true,
         port: 3001
     },

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import "../../styles/main.scss";
+import "../styles/main.scss";
 
-import Deco from './deco.jsx';
+import Deco from './Deco.jsx';
 
 class SignUp extends Component {
     constructor(props) {

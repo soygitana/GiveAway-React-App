@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import "../../styles/main.scss";
+import "../styles/main.scss";
+
 class Deco extends Component {
     render() {
         return (
