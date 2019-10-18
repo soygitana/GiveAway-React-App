@@ -41,31 +41,28 @@ class HomeOrganizations extends Component {
                                 <Deco />
                             </div>
                         </div>
-
-
                         <div className="text-boxes">
                             <div className="container-flex">
-                             <Textbox text="Fundacjom" />
-                             <Textbox text="Organizacjom porządkowym" />
-                            <Textbox text="Lokalnym zbiórkom" />
+                                <Textbox text="Fundacjom" />
+                                <Textbox text="Organizacjom porządkowym" />
+                                <Textbox text="Lokalnym zbiórkom" />
                             </div>
                         </div>
-
                         <div className="container-flex container-flex-text">
                             <div className="box-flex">
                                 <p className="text">Venice gnarly ollie hole aerial slap maxwell regular footed downhill bone air. Coper rock and roll front foot impossible. Thrasher trucks. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
-                            </div>
+                        </div>
 
-                                <Organization title="Organizacja 'Lorem Ipsum 1'" text="Proin varius turpis ut sem porttitor varius." textSecondary="quis, feugiat a, tellus." />
-                                <Organization title="Organizacja 'Lorem Ipsum 2'" text="Proin varius turpis ut sem porttitor varius." textSecondary="quis, feugiat a, tellus." />
-                                <Organization title="Organizacja 'Lorem Ipsum 3'" text="Proin varius turpis ut sem porttitor varius." textSecondary="quis, feugiat a, tellus." />
+                        <Organization title="Organizacja 'Lorem Ipsum 1'" text="Proin varius turpis ut sem porttitor varius." textSecondary="quis, feugiat a, tellus." />
+                        <Organization title="Organizacja 'Lorem Ipsum 2'" text="Proin varius turpis ut sem porttitor varius." textSecondary="quis, feugiat a, tellus." />
+                        <Organization title="Organizacja 'Lorem Ipsum 3'" text="Proin varius turpis ut sem porttitor varius." textSecondary="quis, feugiat a, tellus." />
 
-                            </div>
+                    </div>
                 </section>
             </>
-                    )
-                }
-            }
-            
+        )
+    }
+}
+
 export default HomeOrganizations;
