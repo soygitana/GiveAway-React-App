@@ -1,42 +1,41 @@
 .home-contact {
-    background-color: white;
-    background-image: url('/assets/Background-Contact-Form.jpg');
-    min-height: 950px;
-    background-repeat: no-repeat;
-    opacity: 0.6;
-    margin-top: 50px;
- 
-    .title {
-        margin-top: 150px;
-    }
+  background-color: white;
+  background-image: url("/assets/Background-Contact-Form.jpg");
+  min-height: 950px;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  margin-top: 50px;
+
+  .title {
+    margin-top: 150px;
+  }
 }
 
 .contact-form {
-    margin-top: 50px;
-    // border: 1px solid blue;
-justify-content: space-around;
-flex-direction: column;
-text-align: center;
+  margin-top: 50px;
+  // border: 1px solid blue;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
 
-
-    p {
-        color: black;
-        font-size: 14px;
-        font-weight: 600;
-        letter-spacing: 1px;
+  p {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  input {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(161, 161, 161);
+    padding: 5px;
+    margin-bottom: 20px;
+    &::placeholder {
+      color: rgb(201, 199, 199);
     }
-   input {
-       border: none;
-       background: transparent;
-       border-bottom: 1px solid rgb(161, 161, 161);
-       padding: 5px;
-       margin-bottom: 20px;
-       &::placeholder {
-        color:  rgb(201, 199, 199);
-           }
-   }
+  }
 
-   textarea {
+  textarea {
     border: none;
     background: transparent;
     border-bottom: 1px solid rgb(161, 161, 161);
@@ -44,24 +43,22 @@ text-align: center;
     width: 400px;
     height: 100px;
     &::placeholder {
-        color:  rgb(201, 199, 199);
-           }
-}
+      color: rgb(201, 199, 199);
+    }
+  }
 
-.sumbitBtn {
+  .sumbitBtn {
     border: 1px solid $colorDark;
     width: 150px;
     padding: 10px;
+  }
 }
-}
-
 
 .footer {
-    width: 100%;
-    text-align: center;
-    background: transparent;
-    position: absolute;
-    bottom: 0;
-    color: black;
-
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  color: black;
 }

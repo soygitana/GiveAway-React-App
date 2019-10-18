@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 import "../styles/main.scss";
 
-
 import Deco from './Deco.jsx';
 import Textbox from './TextBox.jsx';
-
 
 class Hero extends Component {
     render() {
         return (
             <>
-                <div className="hero">
-                    <div className="app-container col-12">
+                <section id="hero" className="hero">
+                    <div className="app-container">
+
                         <div className="container-flex">
                             <div className="box-flex"></div>
                             <div className="box-flex">
@@ -20,13 +19,14 @@ class Hero extends Component {
                                 </h1>
                                 <Deco />
                                 <div className="text-boxes">
-                                    <Textbox text="oddaj rzeczy" />
+                                    <Textbox link="./login" text="oddaj rzeczy" />
                                     <Textbox text="zorganizuj zbiórkę" />
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                </div>
+                </section>
             </>
         )
     }

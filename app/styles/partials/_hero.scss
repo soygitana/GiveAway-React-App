@@ -1,87 +1,13 @@
 .hero {
-    background-color: white;
-    background-image: url('/assets/Home-Hero-Image.jpg');
-    min-height: 950px;
-    background-position: 20% left;
-    background-position-x: -320px;
-    background-repeat: no-repeat;
-    margin-top: -150px;
+  background-color: white;
+  background-image: url("/assets/Home-Hero-Image.jpg");
+  min-height: 950px;
+  background-position: 20% left;
+  background-position-x: -320px;
+  background-repeat: no-repeat;
+  margin-top: -150px;
 
-    .title {
-        margin-top: 250px;
-    }
-
-    .text-box {
-        width: 200px;
-    }
-}
-
-
-
-.log-panel {
-    text-align: right;
-    margin-top: 20px;
-
-    a {
-        @include link;
-    }
-
-    a:active {
-        @include border;
-    }
-
-}
-
-.page-nav {
-    display: flex;
-    flex-direction: row;
-    margin: 40px 0 150px 0;
-
-    ul {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        justify-content: flex-end;
-    }
-
-    li {
-        font-size: 17px;
-        padding-left: 10px;
-    }
-
-    a {
-        @include link;
-    }
-
-    a:active {
-        @include border;
-    }
-
-}
-
-.text-boxes {
-    margin-top: 25px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    .text-box {
-        @include border;
-        font-size: 25px;
-        text-transform: uppercase;
-        margin: 20px;
-        padding: 15px;
-        height: 100px;
-        max-width: 250px;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: $colorDark;
-        text-decoration: none;
-    }
-    
+  .title {
+    margin-top: 250px;
+  }
 }

@@ -1,61 +1,52 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    min-height: 100%;
-    position: relative;
-    font-family: $fontPrimary;
-    color: $colorDark;
+  min-height: 100%;
+  position: relative;
+  font-family: $fontPrimary;
+  color: $colorDark;
 }
 
-
 .app-container {
-    max-width: 1250px;
-    margin: 0 auto;
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 .container-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .box-flex {
-    flex: 1;
-    padding: .5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .img-fluid {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .title {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
-
 
 .deco {
-    padding: 15px;
+  padding: 20px;
 }
-
 
 @media (min-width: 1600px) {
-   
-.app-container {
+  .app-container {
     max-width: 1600px;
     margin: 0 auto;
+  }
 }
- 
-}
-
-
-
-
-

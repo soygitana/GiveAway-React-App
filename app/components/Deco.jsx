@@ -1,12 +1,7 @@
-import React, { Component } from "react";
-import "../styles/main.scss";
+import React from "react";
 
-class Deco extends Component {
-    render() {
-        return (
-            <img className="deco" src="./assets/Decoration.svg" alt="deco"></img>
-        )
-    }
-}
+const Deco = () => <img className="deco" src="./assets/Decoration.svg" alt="deco"></img>
 
 export default Deco;
+
+

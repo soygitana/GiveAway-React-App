@@ -1,0 +1,15 @@
+.login-panel {
+    text-align: right;
+    margin-top: 20px;
+
+    a {
+        @include link;
+    }
+
+    a:active {
+        @include border;
+    }
+
+}
+
+

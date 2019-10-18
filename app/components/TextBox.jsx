@@ -1,13 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
+import {Link} from 'react-router-dom';
 import "../styles/main.scss";
 
-class Textbox extends Component {
-    render() {
-        const text = this.props.text;
-        return (
-            <a className="text-box">{text}</a>
-        )
-    }
-}
+const Textbox = ({link, text}) => <Link to={link} className="text-box">{text}</Link>
 
 export default Textbox;

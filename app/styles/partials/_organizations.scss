@@ -1,13 +1,24 @@
 .home-organizations {
+  .container-flex {
+    justify-content: space-around;
+    align-items: center;
+  }
 
-    .container-flex {
-        justify-content: space-around;
+  .container-flex-text {
+    .box-flex {
+      max-width: 60%;
+      min-width: 400px;
     }
-.box-flex {
-    max-width: 50%;
-}
+  }
 
-.text {
+  .container-flex-organization {
+    .box-flex {
+      max-width: 60%;
+      min-width: 400px;
+    }
+  }
+
+  .text {
     margin-top: 30px;
     margin-bottom: 50px;
     font-size: 18px;
@@ -15,30 +26,27 @@
     margin-right: 80px;
     line-height: 2;
     text-align: center;
-}
+  }
 
-.organization {
+  .organization {
     margin: 20px 150px 0 150px;
-    font-family: $fontSecondary; 
+    font-family: $fontSecondary;
     color: $colorGrey;
     border-bottom: 2px solid rgb(194, 194, 194);
 
     .title {
-        font-size: 20px;
-        margin: 0;
-        text-align: left;
-     
+      font-size: 20px;
+      margin: 0;
+      text-align: left;
     }
     .text {
-font-size: 15px;
-margin: 0;
-text-align: left;
-margin-bottom: 15px;
-
+      font-size: 15px;
+      margin: 0;
+      text-align: left;
+      margin-bottom: 15px;
     }
     .textSecondary {
-        text-align: right;
+      text-align: right;
     }
-}
-
+  }
 }

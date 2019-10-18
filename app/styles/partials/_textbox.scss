@@ -1,0 +1,23 @@
+.text-boxes {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    .text-box {
+        @include border;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        margin: 20px;
+        padding: 15px;
+        height: 100px;
+        width: 250px;
+        color: $colorDark;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    
+}
