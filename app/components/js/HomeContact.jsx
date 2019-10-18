@@ -68,7 +68,7 @@ class HomeContact extends Component {
     render() {
         return (
             <>
-                <div id="contact" className="contact">
+                <section id="contact" className="home-contact">
                     <div className="app-container col-12">
                         <div className="container-flex">
                             <div className="box-flex"></div>
@@ -80,7 +80,7 @@ class HomeContact extends Component {
                         </div>
                     </div>
                     <Footer />
-                </div>
+                </section>
             </>
         )
     }

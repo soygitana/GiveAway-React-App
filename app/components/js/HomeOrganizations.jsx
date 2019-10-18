@@ -32,7 +32,7 @@ class HomeOrganizations extends Component {
     render() {
         return (
             <>
-                <div id="organization" className="help">
+                <section id="organizations" className="home-organizations">
                     <div className="app-container col-12">
                         <div className="container-flex">
                             <div className="box-flex">
@@ -50,7 +50,7 @@ class HomeOrganizations extends Component {
                         <Organization title="Organizacja 'Lorem Ipsum 2'" text="Proin varius turpis ut sem porttitor varius." textSecondary="quis, feugiat a, tellus." />
                         <Organization title="Organizacja 'Lorem Ipsum 3'" text="Proin varius turpis ut sem porttitor varius." textSecondary="quis, feugiat a, tellus." />
                     </div>
-                </div>
+                </section>
             </>
         )
     }

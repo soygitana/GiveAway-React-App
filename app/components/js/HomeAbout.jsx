@@ -9,7 +9,7 @@ class HomeAbout extends Component {
     render() {
         return (
             <>
-                <div id='about' className="about">
+                <section id='about' className="home-about">
                     <div className="col-12">
                         <div className="container-flex">
                             <div className="box-flex">
@@ -23,7 +23,7 @@ class HomeAbout extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </>
         )
     }

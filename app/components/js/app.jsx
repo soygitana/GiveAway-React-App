@@ -10,7 +10,7 @@ import {
 } from 'react-router-dom';
 
 
-import LoginNav from './LoginNav.jsx';
+import LoginPanel from './LoginPanel.jsx';
 import Navigation from './Navigation.jsx';
 import Home from './Home.jsx';
 import SignUp from './SignUp.jsx'
@@ -21,7 +21,7 @@ class App extends Component {
     render() {
         return (
             <HashRouter>
-                <LoginNav />
+                <LoginPanel />
                 <Navigation />
                 <Switch>
                     <Route exact path='/' component={Home} />

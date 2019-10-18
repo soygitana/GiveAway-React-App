@@ -9,5 +9,4 @@ class Deco extends Component {
     }
 }
 
-
 export default Deco;

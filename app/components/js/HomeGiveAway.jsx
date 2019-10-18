@@ -24,4 +24,15 @@ class HomeButton extends Component {
     }
 }
 
-export default HomeButton;
+class HomeGiveAway extends Component {
+    render() {
+        return (
+            <section id="giveaway">
+                <HomeButton/>
+            </section>
+        )
+    }
+}
+
+
+export default HomeGiveAway;

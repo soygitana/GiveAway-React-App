@@ -6,7 +6,7 @@ import Deco from './deco.jsx';
 class HomeSteps extends Component {
     render() {
         return (
-            <div id="steps">
+            <section id="steps">
             <div className="app-container col-12">
                 <div className="container-flex">
                     <div className="box-flex">
@@ -15,7 +15,7 @@ class HomeSteps extends Component {
                     </div>
                 </div>
             </div>
-            </div>
+            </section>
         )
     }
 }

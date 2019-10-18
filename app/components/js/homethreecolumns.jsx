@@ -24,7 +24,7 @@ class HomeColumns extends Component {
     render() {
         return (
             <>
-                <div className="home-columns">
+                <section className="home-columns">
                     <div className="app-container col-12">
 
                         <div className="container-flex">
@@ -35,7 +35,7 @@ class HomeColumns extends Component {
 
 
                     </div>
-                </div>
+                </section>
             </>
         )
     }

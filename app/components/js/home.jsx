@@ -5,7 +5,7 @@ import Hero from './HomeHeader.jsx';
 import HomeColumns from './HomeThreeColumns.jsx';
 import HomeSteps from './HomeSteps.jsx';
 import HomeToDo from './HomeTodo.jsx';
-import HomeButton from './HomeButton.jsx';
+import HomeGiveAway from './HomeGiveAway.jsx';
 import HomeAbout from './HomeAbout.jsx';
 import HomeOrganizations from './HomeOrganizations.jsx';
 import HomeContact from './HomeContact.jsx';
@@ -18,7 +18,7 @@ class Home extends Component {
                 <HomeColumns />
                 <HomeSteps />
                 <HomeToDo />
-                <HomeButton />
+                <HomeGiveAway />
                 <HomeAbout/>
                 <HomeOrganizations/>
                 <HomeContact/>

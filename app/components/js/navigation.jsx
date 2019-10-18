@@ -11,7 +11,7 @@ class Navigation extends Component {
                         <li><AnchorLink href='#'>start</AnchorLink></li>
                         <li><AnchorLink href='#steps'>o co chodzi?</AnchorLink></li>
                         <li><AnchorLink href='#about'>o nas</AnchorLink></li>
-                        <li><AnchorLink href='#organization'>fundacja i organizacje</AnchorLink></li>
+                        <li><AnchorLink href='#organizations'>fundacja i organizacje</AnchorLink></li>
                         <li><AnchorLink href='#contact'>kontakt</AnchorLink></li>
                     </ul>
                 </nav>
