@@ -8,7 +8,7 @@ const HomeSteps = () => (
 
         <div className="container-flex">
             <div className="box-flex">
-                <h2 className="title">Wystarczą 4 proste kroki</h2>
+                <h2 className="title-steps">Wystarczą 4 proste kroki</h2>
                 <Deco />
             </div>
         </div>
