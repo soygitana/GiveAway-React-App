@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../styles/main.scss";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import {Link} from 'react-router-dom';
 
 class Navigation extends Component {
     render() {
@@ -8,7 +9,7 @@ class Navigation extends Component {
             <div className="app-container col-12">
                 <nav class="page-nav">
                     <ul class="page-nav-list">
-                        <li><AnchorLink href='#'>start</AnchorLink></li>
+                        <li><Link to='/'>start</Link></li>
                         <li><AnchorLink href='#steps'>o co chodzi?</AnchorLink></li>
                         <li><AnchorLink href='#about'>o nas</AnchorLink></li>
                         <li><AnchorLink href='#organizations'>fundacja i organizacje</AnchorLink></li>

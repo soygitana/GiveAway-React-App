@@ -15,6 +15,7 @@ import Navigation from './Navigation.jsx';
 import Home from './Home.jsx';
 import SignUp from './SignUp.jsx';
 import LogIn from './LogIn.jsx';
+import LogOut from './LogOut.jsx';
 import NotFound from './NotFound.jsx'
 
 class App extends Component {
@@ -27,6 +28,7 @@ class App extends Component {
                     <Route exact path='/' component={Home} />
                     <Route path='/signup' component={SignUp} />
                     <Route path='/login' component={LogIn} />
+                    <Route path='/logout' component={LogOut} />
                     <Route component={NotFound} />
                 </Switch>
             </HashRouter>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "../styles/main.scss";
-
+import {Link} from 'react-router-dom';
 import Deco from './Deco.jsx';
 
 class SignUp extends Component {
@@ -15,7 +15,7 @@ class SignUp extends Component {
                         <h2 className="title">Załóż konto</h2>
                         <Deco />
                         <form className="contact-form">
-                            <div className="form-background">
+                            <div className="container-flex form-background">
                                 <label>
                                     <p className="input-title">Email</p>
                                     <input type="text" />
@@ -30,8 +30,8 @@ class SignUp extends Component {
                                 </label>
                             </div>
                             <div className="container-flex container-btn">
-                                <input className="submitBtn" type="submit" value="Zaloguj się" />
-                                <input className="submitBtn" type="submit" value="Załóż konto" />
+                                <Link className="link" to="/login">Zaloguj się</Link>
+                                <input className="link" type="submit" value="Załóż konto" />
                             </div>
                         </form>
 

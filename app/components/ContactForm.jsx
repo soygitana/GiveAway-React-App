@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import "../styles/main.scss";
 import axios from 'axios'
 
-
-
 const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
 const validateForm = (errors) => {
     let valid = true;
@@ -13,6 +11,21 @@ const validateForm = (errors) => {
     return valid;
 }
 
+
+const withSuccessHandling = WrappedComponent => ({ showSuccess, children }) => {
+    return (
+      <WrappedComponent>
+        {showSuccess && <div className="success">Wiadomość została wysłana! <br/>
+         Wkrótce się z Tobą skontaktujemy.</div>}
+        {children}
+      </WrappedComponent>
+    );
+  };
+
+  const DivWithSuccessHandling = withSuccessHandling(({children}) => <div>{children}</div>)
+
+
+
 class ContactForm extends Component {
     constructor(props) {
         super(props);
@@ -20,6 +33,7 @@ class ContactForm extends Component {
             fullName: null,
             email: null,
             message: null,
+            showSuccess: false,
             errors: {
                 fullName: '',
                 email: '',
@@ -27,6 +41,7 @@ class ContactForm extends Component {
             }
         };
     }
+
 
     handleChange = (event) => {
         event.preventDefault();
@@ -59,20 +74,30 @@ class ContactForm extends Component {
         this.setState({ errors, [name]: value });
     }
 
+ 
+
     handleSubmit = (event) => {
         event.preventDefault();
         if (validateForm(this.state.errors)) {
-            console.info('Valid Form')
+            console.log('Valid Form');
+            toggleSuccess = () => {
+                this.setState((prevState, props,) => {
+                  return { showSuccess: !prevState.showSuccess }
+                });
+              };
         } else {
-            console.error('Invalid Form')
+            console.log('Invalid Form')
         }
     }
 
     render() {
         const { errors } = this.state;
         return (
-            <div className="container-flex contact-form">
+            <>
 
+         <DivWithSuccessHandling showSuccess={this.state.showSuccess} /> 
+
+            <div className="container-flex contact-form">
                 <form onSubmit={this.handleSubmit} noValidate>
 
                     <div className="container-flex">
@@ -80,30 +105,30 @@ class ContactForm extends Component {
                             <label htmlFor="fullName"><p className="input-title"> Wpisz swoje imię:</p></label>
                             <input type='text' name='fullName' onChange={this.handleChange} noValidate />
                             {errors.fullName.length > 0 &&
-                                console.log("name is not valid!")}
+                                <span className="error">Podane imię jest nieprawidłowe</span>}
                         </div>
                         <div className="box-flex">
                             <label htmlFor="email"><p className="input-title">Wpisz swoj email:</p></label>
                             <input type='email' name='email' onChange={this.handleChange} noValidate />
                             {errors.email.length > 0 &&
-                                console.log("email is not valid!")}
+                               <span className="error">Podany email jest nieprawidłowy</span>}
                         </div>
                     </div>
                     <div className="box-flex">
                         <label htmlFor="message"><p className="input-title"> Wpisz swoją wiadomość:</p></label>
                         <textarea type='text' name='message' onChange={this.handleChange} noValidate />
                         {errors.message.length > 0 &&
-                            console.log("Message must be 120 characters in length")}
+                             <span className="error">Wiadomość musi mieć conajmniej 120 znaków</span>}
                     </div>
                     <div className='info'>
                     </div>
                     <div className='container-flex container-btn'>
-                        <button className="submitBtn">Wyślij</button>
+                        <button onClick={this.toggleSuccess} className="submitBtn">Wyślij</button>
                     </div>
 
                 </form>
             </div>
-
+</>
         );
     }
 }

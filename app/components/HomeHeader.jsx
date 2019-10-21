@@ -20,7 +20,7 @@ class Hero extends Component {
                                 <Deco />
                                 <div className="text-boxes">
                                     <Textbox link="./login" text="oddaj rzeczy" />
-                                    <Textbox text="zorganizuj zbiórkę" />
+                                    <Textbox link="./login" text="zorganizuj zbiórkę" />
                                 </div>
                             </div>
                         </div>

@@ -7,7 +7,9 @@
   &::after {
     content: "";
     background-image: url("/assets/Background-Contact-Form.jpg");
-    opacity: 0.4;
+    background-repeat: no-repeat;
+    background-color: rgb(248, 244, 240);
+    opacity: 0.3;
     top: 0;
     left: 0;
     bottom: 0;
@@ -71,7 +73,7 @@
     }
   }
 
-  button.submitBtn {
+  .submitBtn {
     border: 1px solid $colorDark;
     width: 150px;
     padding: 10px;
@@ -90,3 +92,20 @@
   bottom: 0;
   color: black;
 }
+
+.error {
+  font-size: 10px;
+  color: red;
+  padding: 5px;
+}
+
+.success {
+  font-size: 15px;
+  color: green;
+  text-align: center;
+  margin-top: -10px;
+  padding: 5px;
+
+}
+
+
