@@ -58,8 +58,13 @@ class SignUpForm extends React.Component {
         const email = ReactDOM.findDOMNode(this._emailInput).value;
         const message = ReactDOM.findDOMNode(this._messageInput).value;
 
+        var bodyFormData = new FormData();
+        bodyFormData = [name, email, message];
+
+          console.log(bodyFormData)
 
         const errors = validate(name, email, message);
+
         if (errors.length > 0) {
             this.setState({ errors });
             console.log("invalid form!")
@@ -69,12 +74,28 @@ class SignUpForm extends React.Component {
         if (errors.length === 0) {
             // submit the data...
             console.log("valid form!")
+
             this.setState({
                 showSuccess: "true"
             });
-            this.myFormRef.reset();
-        }
+           
+            axios({
+                method: 'post',
+                url: 'https://fer-api.coderslab.pl/v1/portfolio/contact',
+                contentType: "application/json",
+                data: JSON.stringify(bodyFormData),
+            })
+            .then(function (res) {
+                console.log(res);
+                res.status(200).send("Success!")
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
 
+            this.myFormRef.reset();
+
+        }
     }
 
     render() {
