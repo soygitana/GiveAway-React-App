@@ -4,38 +4,7 @@ import "../styles/main.scss";
 import axios from 'axios'
 
 import SuccessMessage from './SuccessMessage.jsx';
-
-
-function validate(name, email, message) {
-    
-    //  storing errors for all fields in a signle array
-
-    const errors = [];
-
-    // regular expression for email validation
-
-    function emailIsValid (email) {
-        const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
-        return validEmailRegex.test(email)
-      }
-
-
-    if (name.length === 0) {
-        errors.push("name can't be empty");
-        console.log('invalid name')
-    }
-    if (email.length === 0 || !emailIsValid(email)) {
-        errors.push("invalid email");
-        console.log('incorrect email')
-    }
-
-    if (message.length < 120) {
-        errors.push("message should be at least 120 characters long");
-        console.log('invalid message')
-    }
-
-    return errors;
-}
+import { validate } from './validation.js';
 
 
 class SignUpForm extends React.Component {
@@ -58,10 +27,14 @@ class SignUpForm extends React.Component {
         const email = ReactDOM.findDOMNode(this._emailInput).value;
         const message = ReactDOM.findDOMNode(this._messageInput).value;
 
-        var bodyFormData = new FormData();
-        bodyFormData = [name, email, message];
+        //   var bodyFormData = new FormData();
+        const bodyFormData = {
+            name,
+            email,
+            msg: message
+        };
 
-          console.log(bodyFormData)
+        console.log(bodyFormData)
 
         const errors = validate(name, email, message);
 
@@ -75,23 +48,23 @@ class SignUpForm extends React.Component {
             // submit the data...
             console.log("valid form!")
 
-            this.setState({
-                showSuccess: "true"
-            });
-           
+
+
             axios({
                 method: 'post',
                 url: 'https://fer-api.coderslab.pl/v1/portfolio/contact',
                 contentType: "application/json",
-                data: JSON.stringify(bodyFormData),
+                data: bodyFormData,
             })
-            .then(function (res) {
-                console.log(res);
-                res.status(200).send("Success!")
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
+                .then(function (res) {
+                    this.setState({
+                        showSuccess: "true"
+                    });
+                    res.status(200).send("Success!")
+                })
+                .catch(function (error) {
+                    console.log(error.message);
+                });
 
             this.myFormRef.reset();
 
@@ -131,7 +104,7 @@ class SignUpForm extends React.Component {
                                 type="text"
                                 placeholder="message" />
                             {errors.length > 0 &&
-                                <span className="error">Wiadomość musi mieć conajmniej 120 znaków</span>}
+                                <span className="error">Wiadomość musi mieć conajmniej 10 znaków</span>}
                         </div>
                         <div className='info'>
                         </div>
