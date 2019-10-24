@@ -4,7 +4,7 @@ const validate = (name, email, message) => {
 
     const errors = [];
 
-    // regular expression for email validation
+    // regular expression for an email validation
 
     function emailIsValid(email) {
         const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
