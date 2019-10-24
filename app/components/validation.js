@@ -21,8 +21,8 @@ const validate = (name, email, message) => {
         console.log('incorrect email')
     }
 
-    if (message.length < 10) {
-        errors.push("message should be at least 10 characters long");
+    if (message.length < 15) {
+        errors.push("message should be at least 15 characters long");
         console.log('invalid message')
     }
 
