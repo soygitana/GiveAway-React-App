@@ -4,15 +4,10 @@ import "../styles/main.scss";
 import axios from 'axios'
 
 import SuccessMessage from './SuccessMessage.jsx';
-<<<<<<< HEAD
 
 // importing functions
 
 import {validate} from './validation.js';
-=======
-import { validate } from './validation.js';
-
->>>>>>> 855b615d3ab2702a5c44d5ea3cdde027c403a533
 
 class SignUpForm extends React.Component {
     constructor() {
@@ -34,16 +29,7 @@ class SignUpForm extends React.Component {
         const email = ReactDOM.findDOMNode(this._emailInput).value;
         const msg = ReactDOM.findDOMNode(this._messageInput).value;
 
-<<<<<<< HEAD
         let bodyFormData = {name, email, msg};
-=======
-        //   var bodyFormData = new FormData();
-        const bodyFormData = {
-            name,
-            email,
-            msg: message
-        };
->>>>>>> 855b615d3ab2702a5c44d5ea3cdde027c403a533
 
         console.log(bodyFormData)
 
@@ -59,15 +45,11 @@ class SignUpForm extends React.Component {
             // submit the data...
             console.log("valid form!")
 
-<<<<<<< HEAD
           
             this.setState({
                 showSuccess: "true"
             });
            
-=======
-
->>>>>>> 855b615d3ab2702a5c44d5ea3cdde027c403a533
 
             axios({
                 method: 'post',
