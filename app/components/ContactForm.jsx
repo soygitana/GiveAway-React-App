@@ -5,38 +5,9 @@ import axios from 'axios'
 
 import SuccessMessage from './SuccessMessage.jsx';
 
+// importing functions
 
-function validate(name, email, message) {
-    
-    //  storing errors for all fields in a signle array
-
-    const errors = [];
-
-    // regular expression for email validation
-
-    function emailIsValid (email) {
-        const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
-        return validEmailRegex.test(email)
-      }
-
-
-    if (name.length === 0) {
-        errors.push("name can't be empty");
-        console.log('invalid name')
-    }
-    if (email.length === 0 || !emailIsValid(email)) {
-        errors.push("invalid email");
-        console.log('incorrect email')
-    }
-
-    if (message.length < 120) {
-        errors.push("message should be at least 120 characters long");
-        console.log('invalid message')
-    }
-
-    return errors;
-}
-
+import {validate} from './validation.js';
 
 class SignUpForm extends React.Component {
     constructor() {
@@ -56,14 +27,13 @@ class SignUpForm extends React.Component {
 
         const name = ReactDOM.findDOMNode(this._nameInput).value;
         const email = ReactDOM.findDOMNode(this._emailInput).value;
-        const message = ReactDOM.findDOMNode(this._messageInput).value;
+        const msg = ReactDOM.findDOMNode(this._messageInput).value;
 
-        var bodyFormData = new FormData();
-        bodyFormData = [name, email, message];
+        let bodyFormData = {name, email, msg};
 
           console.log(bodyFormData)
 
-        const errors = validate(name, email, message);
+        const errors = validate(name, email, msg);
 
         if (errors.length > 0) {
             this.setState({ errors });
@@ -75,10 +45,12 @@ class SignUpForm extends React.Component {
             // submit the data...
             console.log("valid form!")
 
+          
             this.setState({
                 showSuccess: "true"
             });
            
+
             axios({
                 method: 'post',
                 url: 'https://fer-api.coderslab.pl/v1/portfolio/contact',
@@ -131,7 +103,7 @@ class SignUpForm extends React.Component {
                                 type="text"
                                 placeholder="message" />
                             {errors.length > 0 &&
-                                <span className="error">Wiadomość musi mieć conajmniej 120 znaków</span>}
+                                <span className="error">Wiadomość musi mieć conajmniej 10 znaków</span>}
                         </div>
                         <div className='info'>
                         </div>
