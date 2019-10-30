@@ -13,8 +13,8 @@
 
   .container-flex-organization {
     .box-flex {
-      max-width: 60%;
-      min-width: 400px;
+      max-width: 70%;
+      min-width: 600px;
     }
   }
 
@@ -29,24 +29,35 @@
   }
 
   .organization {
-    margin: 20px 150px 0 150px;
-    font-family: $fontSecondary;
     color: $colorGrey;
-    border-bottom: 2px solid rgb(194, 194, 194);
-
+    
     .title {
-      font-size: 20px;
+      font-size: 18px;
       margin: 0;
       text-align: left;
     }
     .text {
-      font-size: 15px;
+      font-size: 13px;
       margin: 0;
       text-align: left;
-      margin-bottom: 15px;
+      font-style: italic;
     }
     .textSecondary {
       text-align: right;
+      font-size: 13px;
     }
   }
+}
+
+.list-el {
+  margin: 20px 0;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  list-style: none;
+  font-family: $fontSecondary;
+  color: $colorGrey;
+}
+
+.loading {
+  width: 100%;
+  text-align: center;
 }

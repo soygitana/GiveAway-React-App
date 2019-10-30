@@ -5,7 +5,7 @@ import axios from 'axios'
 
 import SuccessMessage from './SuccessMessage.jsx';
 
-// importing functions
+// importing function
 
 import {validate} from './validation.js';
 
