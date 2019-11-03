@@ -4,19 +4,17 @@ import "../styles/main.scss";
 import {
     HashRouter,
     Route,
-    Link,
     Switch,
-    NavLink,
 } from 'react-router-dom';
 
 
-import LoginPanel from './LoginPanel.jsx';
-import Navigation from './Navigation.jsx';
-import Home from './Home.jsx';
-import SignUp from './SignUp.jsx';
-import LogIn from './LogIn.jsx';
-import LogOut from './LogOut.jsx';
-import NotFound from './NotFound.jsx'
+import LoginPanel from '../components/LandingPage/LoginPanel.jsx';
+import Navigation from '../components/LandingPage/Navigation.jsx';
+import Home from '../components/LandingPage/Home.jsx';
+import SignUp from '../components/LogIn/SignUp.jsx';
+import LogIn from '../components/LogIn/LogIn.jsx';
+import LogOut from '../components/LogIn/LogOut.jsx';
+import NotFound from '../components/LandingPage/NotFound.jsx'
 
 class App extends Component {
     render() {

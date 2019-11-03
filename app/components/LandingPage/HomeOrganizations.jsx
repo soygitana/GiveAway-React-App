@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import "../styles/main.scss";
 import ReactPaginate from 'react-paginate';
-
-import Deco from './Deco.jsx';
+import Deco from '../LandingPage/Deco.jsx';
 
 
 class FundationList extends Component {
@@ -59,10 +57,10 @@ class FundationList extends Component {
                     <div className="container-flex container-flex-organization organization">
                         <div className="box-flex">
                             {items.slice(this.state.offset, this.state.offset + 3).map(item => (
-                                <li className="list-el" key={item.id}> 
-                                        <p className="title">{item.name}</p>
-                                        <p className="text">{item.goal}</p>
-                                        <p className="textSecondary">{item.things}</p>           
+                                <li className="list-el" key={item.id}>
+                                    <p className="title">{item.name}</p>
+                                    <p className="text">{item.goal}</p>
+                                    <p className="textSecondary">{item.things}</p>
                                 </li>
                             ))}
 
@@ -143,7 +141,7 @@ class OrganizationsList extends Component {
                         <div className="box-flex">
                             {items.slice(this.state.offset, this.state.offset + 3).map(item => (
                                 <li className="list-el" key={item.id}>
-                                  <div className="list-el-about">
+                                    <div className="list-el-about">
                                         <p className="title">{item.name}</p>
                                         <p className="text">{item.goal}</p>
                                         <p className="textSecondary">{item.things}</p>
@@ -207,7 +205,7 @@ class LocalList extends Component {
                         <div className="box-flex">
                             {items.map(item => (
                                 <li className="list-el" key={item.id}>
-                                  <div className="list-el-about">
+                                    <div className="list-el-about">
                                         <p className="title">{item.name}</p>
                                         <p className="text">{item.goal}</p>
                                         <p className="textSecondary">{item.things}</p>

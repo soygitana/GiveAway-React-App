@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import "../styles/main.scss";
-
-import Textbox from './TextBox.jsx';
+import Textbox from '../LandingPage/TextBox.jsx';
 
 class HomeGiveAway extends Component {
     render() {
@@ -11,7 +9,7 @@ class HomeGiveAway extends Component {
                 <div className="text-boxes">
                     <Textbox link="/login" text="oddaj rzeczy" />
                 </div>
-                
+
             </section>
         )
     }

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import "../styles/main.scss";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Navigation extends Component {
     render() {

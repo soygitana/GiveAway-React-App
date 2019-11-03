@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../styles/main.scss";
 
 import Hero from './HomeHeader.jsx';
 import HomeColumns from './HomeThreeColumns.jsx';
@@ -8,7 +7,7 @@ import HomeToDo from './HomeToDo.jsx';
 import HomeGiveAway from './HomeGiveAway.jsx';
 import HomeAbout from './HomeAbout.jsx';
 import HomeOrganizations from './HomeOrganizations.jsx';
-import HomeContact from './HomeContact.jsx';
+import HomeContact from './HomeContact.jsx'
 
 class Home extends Component {
     render() {
@@ -19,9 +18,9 @@ class Home extends Component {
                 <HomeSteps />
                 <HomeToDo />
                 <HomeGiveAway />
-                <HomeAbout/>
-                <HomeOrganizations/>
-                <HomeContact/>
+                <HomeAbout />
+                <HomeOrganizations />
+                <HomeContact />
             </>
         )
     }

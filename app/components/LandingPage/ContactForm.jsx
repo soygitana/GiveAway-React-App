@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import "../styles/main.scss";
 import axios from 'axios'
 
 import SuccessMessage from './SuccessMessage.jsx';
 
 // importing function
 
-import {validate} from './validation.js';
+import { validate } from '../../components/functions/validation';
 
 class SignUpForm extends React.Component {
     constructor() {
@@ -29,7 +28,7 @@ class SignUpForm extends React.Component {
         const email = ReactDOM.findDOMNode(this._emailInput).value;
         const msg = ReactDOM.findDOMNode(this._messageInput).value;
 
-        let bodyFormData = {name, email, msg};
+        let bodyFormData = { name, email, msg };
 
         console.log(bodyFormData)
 
@@ -45,11 +44,11 @@ class SignUpForm extends React.Component {
             // submit the data...
             console.log("valid form!")
 
-          
+
             this.setState({
                 showSuccess: "true"
             });
-           
+
 
             axios({
                 method: 'post',
@@ -68,6 +67,9 @@ class SignUpForm extends React.Component {
                 });
 
             this.myFormRef.reset();
+            this.setState({
+                errors: []
+            });
 
         }
     }

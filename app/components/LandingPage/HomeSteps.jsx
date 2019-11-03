@@ -1,7 +1,5 @@
 import React from "react";
-import "../styles/main.scss";
-
-import Deco from './Deco.jsx';
+import Deco from '../LandingPage/Deco.jsx';
 
 const HomeSteps = () => (
     <section id="steps">

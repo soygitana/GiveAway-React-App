@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import "../styles/main.scss";
-
-import Deco from './Deco.jsx';
-import Textbox from './TextBox.jsx';
+import Deco from '../LandingPage/Deco.jsx';
+import Textbox from '../LandingPage/TextBox.jsx';
 
 class Hero extends Component {
     render() {

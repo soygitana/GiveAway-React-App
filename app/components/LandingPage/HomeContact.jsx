@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import "../styles/main.scss";
-
-import Deco from './Deco.jsx';
+import Deco from '../LandingPage/Deco.jsx';
 import ContactForm from './ContactForm.jsx';
 
 
