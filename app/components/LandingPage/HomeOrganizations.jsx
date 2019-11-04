@@ -14,6 +14,7 @@ class FundationList extends Component {
             currentPage: 0,
         }
     };
+
     // limit - 3
     // offset - limit * page - perPage * currentPage
 
@@ -76,9 +77,6 @@ class FundationList extends Component {
                         </div>
                     </div>
                 </div>
-
-
-
             )
         }
     }
@@ -273,7 +271,6 @@ class HomeOrganizations extends Component {
                                 <Deco />
                             </div>
                         </div>
-
                         <div className="text-boxes">
                             <div className="container-flex">
                                 <button className="text-box" onClick={this.handleFundationsClick}>Fundacjom</button>
@@ -281,21 +278,16 @@ class HomeOrganizations extends Component {
                                 <button className="text-box" onClick={this.handleLocalClick}>Lokalnym zbiórkom</button>
                             </div>
                         </div>
-
-
-
                         <div className="container-flex container-flex-text">
                             <div className="box-flex">
                                 <p className="text">Venice gnarly ollie hole aerial slap maxwell regular footed downhill bone air. Coper rock and roll front foot impossible. Thrasher trucks. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
-
                         <div className="slider-list">
                             <ul className="slider-list-elements" ref="list">
                                 {showList}
                             </ul>
                         </div>
-
                     </div>
                 </section>
             </>
