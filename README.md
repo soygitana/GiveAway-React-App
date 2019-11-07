@@ -14,6 +14,12 @@ This project was created with [React](https://reactjs.org/)
 * react-paginate
 * react-scroll
 
+1. Menu with react-scroll
+
+![giveaway1](https://user-images.githubusercontent.com/43447293/68402496-b48d8480-017b-11ea-81da-78db2fcb0656.JPG)
+
+2. Landing page
+
 
 ### Local installation
 
