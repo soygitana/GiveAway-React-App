@@ -45,6 +45,6 @@
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.0",
     "react-scroll": "^1.7.14",
-    "whatwg-fetch": "^3.0.0"
+    "whatwg-fetch": "^3.0.0" 
   }
 }
