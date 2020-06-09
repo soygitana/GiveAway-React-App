@@ -29,7 +29,7 @@ Install npm:
 $ npm install
 ```
 
-Run mock api to populate database
+Run mock api to populate database:
 
 ```
 $ npm run mock:api
